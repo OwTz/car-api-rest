@@ -47,4 +47,20 @@ public class DriverAPI {
         return foundDriver;
 
     }
+
+    @PatchMapping("/drivers/{ID}")
+    public Driver alterUpdateDriver(@PathVariable("ID") long id, @RequestBody Driver d){
+        Driver foundDriver = findById(id);
+        foundDriver = d;
+        driverRepository.save(foundDriver);
+        return foundDriver;
+    }
+
+    @DeleteMapping("/drivers/{ID}")
+    public void deleteDriver(@PathVariable("ID") long  id){
+         driverRepository.delete(findById(id));
+    }
+
+
+
 }
