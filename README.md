@@ -8,8 +8,7 @@ utilizando os métodos do protocolo HTTP.
 2. POST
 3. PUT 
 4. PATCH
-5. DELETE 
-6. 
+5. DELETE
 </p>
 
 # Features 
