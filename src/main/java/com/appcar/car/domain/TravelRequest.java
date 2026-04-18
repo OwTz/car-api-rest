@@ -2,6 +2,8 @@ package com.appcar.car.domain;
 
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import lombok.Data;
 
@@ -9,6 +11,8 @@ import lombok.Data;
 @Entity
 public class TravelRequest {
 
+    @Id
+    @GeneratedValue
     Long id;
 
 
