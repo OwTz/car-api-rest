@@ -18,7 +18,7 @@ import java.util.Optional;
 @RequestMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 public class DriverAPI {
 
-//    @Autowired
+    @Autowired
     DriverRepository driverRepository;
 
     @GetMapping("/drivers")
